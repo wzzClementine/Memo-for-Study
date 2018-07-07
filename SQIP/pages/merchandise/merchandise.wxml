@@ -1,0 +1,52 @@
+<!--pages/merchandise/merchandise.wxml-->
+<view class='all'>
+  <view class='topbar' style='height:{{height01}}px;'>
+    
+     <image class='ava' src='{{userInfo.avatarUrl}}'></image>
+     <view class='top'>
+      <view class='labelbar'>
+       <image class='icon' src='/image/id01.png'></image>
+       <text class='des'>ID</text>
+       <text class='des0'>{{userInfo.nickName}}</text>
+     </view>
+
+
+     <view class='labelbar'>
+       <image class='icon' src='/image/jf01.png'></image>
+       <text class='des'>积分</text>
+       <text class='des0'> {{record}}</text>
+     </view>
+    </view>
+  </view>
+
+  <view class='record' style='height:200px;'>
+    <view class="title" >
+      <text>累计签到天数</text>  
+    </view>
+    <view class='num'>
+      <view class='listV' >
+        <text class='list1'>已经签到过{{day}}天了哦~</text>
+        <text class='list2' bindtap='turnTo'>点击这里继续去签到...</text>
+       </view>
+    </view>
+   
+    
+  </view>
+  
+ 
+
+  <view class='record' style='height:{{height02}}px;'>
+    <view class="title" >
+      <text>每日一句</text>  
+    </view>
+    <view class='num'>
+      <view class='listV'  >
+        <text class='list'>{{passage}}</text>
+       </view>
+    </view>
+   
+    
+  </view>
+  
+</view>
+

@@ -1,0 +1,49 @@
+/* pages/signIn/signIn.wxss */
+
+.circleOut{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 8%;
+  right: 24%;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #85CBC9;
+  height: 200PX;
+  width: 200PX;
+}
+.circleIn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 550;
+  height: 170PX;
+  width: 170PX;
+  border-radius: 50%;
+  background-color: #8FD6D0;
+  color: #787F89;
+}
+.signIn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 40%;
+  margin: 8%;
+}
+.circle1{
+  margin: 2%;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #A9D609;
+}
+.circle0{
+  margin: 2%;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #787F89;
+}

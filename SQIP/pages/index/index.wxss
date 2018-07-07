@@ -1,0 +1,61 @@
+/**index.wxss**/
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10%;
+  background-color: #C0D4B1;
+}
+.result{
+  text-align: center;
+   border-radius: 10px;
+   width: 80%;
+   padding:3%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   word-break: keep-all;
+   white-space: nowrap;
+   font-size: 20px;
+   font-weight: 600;
+   background-color: #89B367;
+}
+.reminder{
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3C4A0D;
+}
+.taskView{
+  display: flex;
+  flex-direction: column;
+}
+.task{
+  display: flex;
+  
+  flex-direction: row;
+  align-items: center;
+  margin: 2%;
+  margin-left: 7%;
+  font-size: 15px;
+}
+.taskContent{
+  border-radius: 15px;
+  background-color: #B5B5B5;
+  padding: 2%;
+  padding-left: 5%;
+  width: 70%;
+  height: 45rpx;
+}
+.icon{
+  margin-left: 8%;
+  height: 120rpx;
+  width: 120rpx;
+}
+.addTaskList{
+  text-align: center;
+  font-size: 17px;
+  margin: 5%;
+  color:gray;
+  margin-bottom: 10%;
+}

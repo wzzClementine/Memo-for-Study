@@ -1,0 +1,20 @@
+<!--index.wxml-->
+
+<view class='top'>
+  <view class='result' bindtap='navigateTo'>{{result[index]}}</view>
+</view>
+
+<view class='reminder'>
+  <text>快来设定自习任务吧~</text>
+</view>
+
+<view class='taskView'>
+  <view class='task' wx:for="{{taskList}}">
+    <input  id='{{index}}' value='{{item.content}}'  class='taskContent' bindblur='saveContent' bindconfirm='saveContent' data-task="{{item.tID}}"></input>
+    <image id='{{index}}' class='icon' src='/image/green{{item.sign}}.png' bindtap='complete' data-task="{{item.tID}}"></image>
+  </view>  
+</view>
+
+<view class='addTaskList' bindtap='reset'>
+   <text>清空任务栏~</text>
+</view>

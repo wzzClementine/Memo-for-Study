@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/merchandise/merchandise",
+    "pages/signIn/signIn",
+    "pages/market/market"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "签到",
+        "iconPath": "image/location01.png",
+        "selectedIconPath": "image/location.png"
+      },
+      {
+        "pagePath": "pages/market/market",
+        "text": "商城",
+        "iconPath": "image/merchandise02.png",
+        "selectedIconPath": "image/merchandise01.png"
+      },
+      {
+        "pagePath": "pages/merchandise/merchandise",
+        "text": "个人",
+        "iconPath": "image/order02.png",
+        "selectedIconPath": "image/order01.png"
+      }
+    ]
+  }
+
+}

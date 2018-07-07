@@ -1,0 +1,35 @@
+<!--pages/market/market.wxml-->
+  <view class='topbar'>
+     <image class='ava' src='{{userInfo.avatarUrl}}'></image>
+     <view class='top'>
+      <view class='labelbar'>
+       <image class='icon' src='/image/id01.png'></image>
+       <text class='des'>ID</text>
+       <text class='des0'>{{userInfo.nickName}}</text>
+     </view>
+
+
+     <view class='labelbar'>
+       <image class='icon' src='/image/jf01.png'></image>
+       <text class='des'>积分</text>
+       <text class='des0'> {{record}}</text>
+     </view>
+    </view>
+  </view>
+
+
+  <view class='list' wx:for="{{list}}">
+
+      <view class='item'>
+        <image class='cover' src='{{item.path}}'></image>
+        <view class='detail'>
+          <text class='name'>{{item.name}}</text>
+          <text class='rest'>剩余：{{item.amount}}</text>
+          <text class='recordView'>所需积分：{{item.record}}</text>
+          <view class='buttonR' bindtap='recordTogift' id='{{index}}' data-task="{{item.ID}}">兑换商品</view>
+        </view>
+
+      </view>
+
+
+    </view>
